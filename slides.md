@@ -23,6 +23,7 @@ footer {
 </style>
 
 <!-- Title Slide -->
+<!-- _class: lead -->
 # Product Documentation Presentation
 **Technical Writer**  
 Email: 23f2002562@ds.study.iitm.ac.in
