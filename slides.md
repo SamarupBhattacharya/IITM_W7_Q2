@@ -1,70 +1,94 @@
 ---
 marp: true
-theme: custom
+theme: my-tech-theme
 paginate: true
+style: |
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+  @theme my-tech-theme;
+  
+  :root {
+    --color-primary: #1e3a8a;
+    --color-secondary: #3b82f6;
+    --color-text: #1f2937;
+    --color-background: #f3f4f6;
+  }
+  
+  section {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-primary);
+  }
+  
+  code {
+    background-color: #e5e7eb;
+    color: #4b5563;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
 ---
 
-<!-- Custom Theme Definition -->
-<style>
-section {
-  font-family: 'Arial', sans-serif;
-  color: #222;
-  background-color: #f5f5f5;
-}
-h1 {
-  color: #00509E;
-}
-footer {
-  font-size: 12px;
-  text-align: right;
-  color: #666;
-}
-</style>
+# Product Documentation
 
-<!-- Title Slide -->
-# Product Documentation Presentation
-**Technical Writer**  
-Email: 23f2002562@ds.study.iitm.ac.in
+## System Architecture Overview
 
----
+### By: 23f2002562@ds.study.iitm.ac.in
 
-# Introduction
-- Maintainable in version control (Git)
-- Easily convertible to PDF, PPTX, and HTML
-- Built using **Marp**
-
----
-
-# Custom Theme & Styling
-- Using custom theme specification
-- Consistent fonts, colors, and layout
-- Extendable for branding needs
-
----
-
-# Background Image Example
-![bg](https://images.unsplash.com/photo-1507525428034-b723cf961d3e)
-
-# Documentation Workflow
-1. Write in Markdown
-2. Convert with Marp CLI
-3. Deploy to GitHub Pages
+This presentation provides a high-level overview of our product's system architecture, focusing on key components and their interactions.
 
 ---
 
-# Mathematical Example
+# Core Components
 
-We analyze algorithmic complexity:
+Our system is built on a modular architecture to ensure scalability and maintainability.
 
-$$
-T(n) = O(n \log n)
-$$
-
-Used for sorting algorithms like Merge Sort and Quick Sort.
+-   **Frontend Application**
+-   **Backend Services (APIs)**
+-   **Database Layer**
+-   **Caching Mechanism**
+-   **Authentication Service**
 
 ---
 
-# Conclusion
-- Lightweight documentation with Marp
-- Customizable with themes and directives
-- Ideal for software product documentation
+# Scalability & Performance
+
+When designing our algorithms, we prioritize efficiency. Let's consider the Big O notation for a core search function.
+
+The time complexity of a simple linear search is:
+
+$$O(n)$$
+
+Where $n$ is the number of elements in the array.
+
+---
+
+# Algorithmic Complexity
+
+For a more efficient binary search algorithm, the time complexity is significantly better:
+
+$$O(\log_2 n)$$
+
+This logarithmic complexity demonstrates the performance gains achieved with a sorted data structure.
+
+---
+
+![bg](https://placehold.co/1920x1080/6b7280/ffffff?text=System%20Diagram%20Here)
+
+---
+
+# Versioning & Maintenance
+
+All documentation is stored in a Git repository. Updates are managed through pull requests, ensuring a clear audit trail.
+
+-   **Version control:** Git
+-   **Documentation format:** Marp Markdown (`.md`)
+-   **Output formats:** HTML, PDF, PPTX
+
+---
+
+# Thank You
+
+**Questions & Feedback Welcome**
